@@ -5,7 +5,6 @@ Watch & Play online here: http://vivinte.com/2048
 -------------
 The excellent Solver is borrowed from here: https://github.com/nneonneo/2048-ai
 
-Solver is able to reach  4096 easily, 8192 most of the times and occasionally 16384.
 This project hocks that solver to a node.js app and uses socket.io to communicate between browser and a python process.
 ## Building
 ### Unix/Linux/OS X
