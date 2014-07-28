@@ -11,7 +11,6 @@ This project hocks that solver to a node.js app and uses socket.io to communicat
 1) Execute:
 
      cd ai
-     ./configure
      make
 Any relatively recent C++ compiler should be able to build the output.
 Note that you don't do `make install`; this program is meant to be run from this directory.
