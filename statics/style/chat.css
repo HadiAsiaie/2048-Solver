@@ -1,0 +1,302 @@
+.top {
+    //height: 200px;
+    background-color: white;
+    margin-right: 620px;
+    margin-bottom: 30px;
+}
+.user-items li {
+    float: right;
+    //display: inline;
+    padding-top: 10px;
+    color: #00B7FF;
+    cursor: pointer;
+    //height: 40px;
+}
+.user-items a {
+    margin: 10px;
+}
+.user-items li:hover, .contact:hover {
+    color: #a0B7FF;
+}
+#invite-form input{
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 4px;
+    width: 100% !important;
+    margin-top: 0px;
+}
+#search{
+    width: 200px;
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 10px;
+}
+#search-result{
+    //display: none;
+    background-color: #ede0ce;
+    position: fixed;
+    width: 200px;
+    //top: 50px;
+    z-index: 100;
+}
+.invite{
+    float: left;
+    padding-top: 0px;
+    //display: inline;
+}
+.invite-button{
+    float: right;
+    //display: inline;
+    margin-top: 15px;
+    width: 60px;
+    height: 20px;
+}
+a{
+    text-decoration: none;
+    color: #00b0ff;
+}
+a:visited{
+    color:#00b0ff;;
+}
+.search-result li{
+    display: list-item;
+    clear: both;
+    z-index: 5;
+
+}
+
+.contacts {
+    //position: fixed;
+    clear: both;
+    width: 200px;
+    height: 2800px;
+    float: left;
+    margin-left: 10px;
+}
+
+.contact {
+    color: #00B7FF;
+    cursor: pointer;
+}
+
+.chat {
+    display: none;
+    width: 800px;
+    height: 500px;
+    //margin-left: 250px;
+    //background-color: green;
+    float: left;
+}
+
+.top-bar {
+    background: #666;
+    color: white;
+    padding: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-bar h1 {
+    display: inline;
+    font-size: 1.1rem;
+}
+
+.top-bar .typicons-message {
+    display: inline-block;
+    padding: 4px 5px 2px 5px;
+}
+
+.top-bar .typicons-minus {
+    position: relative;
+    top: 3px;
+}
+
+.top-bar .left {
+    float: left;
+}
+
+.top-bar .right {
+    float: right;
+    padding-top: 5px;
+}
+
+.top-bar > * {
+    position: relative;
+}
+
+.top-bar::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    opacity: 0.25;
+    background: radial-gradient(white, black);
+    animation: pulse 1s ease alternate infinite;
+}
+
+.discussion {
+    list-style: none;
+    background: #e5e5e5;
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+
+.discussion li {
+    padding: 0.5rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.discussion .avatar {
+    width: 40px;
+    position: relative;
+}
+.discussion .person {
+    position: relative;
+}
+.discussion .avatar img {
+    display: block;
+    width: 100%;
+}
+
+.other .avatar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 5px solid white;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.self {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.self .messages {
+    order: 1;
+    border-bottom-right-radius: 0;
+}
+
+.self .avatar {
+    order: 2;
+}
+
+.self .avatar:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 5px solid white;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.messages {
+    background: white;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.messages p {
+    font-size: 0.8rem;
+    margin: 0 0 0.2rem 0;
+}
+
+.messages time {
+    font-size: 0.7rem;
+    color: #ccc;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+.message-input {
+    background: white;
+    padding: 4px 4px 4px 4px;
+    width: inherit;
+}
+
+.send {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    width: 90px;
+    height: 80px;
+    color: #777777;
+    text-align: center;
+    text-decoration: none;
+}
+.openModal{
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+}
+#sign-up-form,#log-in-form{
+    width: 330px;
+    position: relative;
+    margin: 10% auto;
+    //padding: 5px 20px 13px 20px;
+    //border-radius: 10px;
+    background: #fff;
+    //background: -o-linear-gradient(#fff, #999);
+}
+.panel-heading{
+    background-color: #efefef;
+    height: 40px;
+    //width: inherit;
+    padding-top: 12px;
+    padding-left: 12px;
+}
+form fieldset{
+    border: 0px;
+}
+form input, form button, form label{
+    box-sizing: border-box;
+    //display: block;
+    font-size: 15px;
+    height: 40px;
+    padding: 10px;
+    width: 100% !important;
+    margin-top: 10px;
+}
+.error{
+    display: none;
+    color: red;
+}
+.submit-button{
+    background-color: #2badf3;
+    background-image: linear-gradient(#2badf3, #2492db);
+    margin-bottom: 10px;
+}
+#welcome,#log-out{
+    display: none;
+}
